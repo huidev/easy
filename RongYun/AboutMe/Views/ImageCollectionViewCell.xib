@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="imageCell" id="gTV-IL-0wX" customClass="ImageCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="188" height="243"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="188" height="243"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_launcher.png" translatesAutoresizingMaskIntoConstraints="NO" id="2dx-cI-3Xl">
+                        <rect key="frame" x="0.0" y="0.0" width="188" height="207"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="album_ding.png" translatesAutoresizingMaskIntoConstraints="NO" id="aPk-Iq-hOg">
+                        <rect key="frame" x="0.0" y="210" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="7O5-A8-Th6"/>
+                            <constraint firstAttribute="height" constant="20" id="rUe-gL-hHa"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="album_pl.png" translatesAutoresizingMaskIntoConstraints="NO" id="RI9-pm-Pfw">
+                        <rect key="frame" x="148" y="210" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="DSK-Zc-JhT"/>
+                            <constraint firstAttribute="width" constant="20" id="JIp-8w-B7b"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QO3-Uq-Gpt">
+                        <rect key="frame" x="25" y="210" width="7" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RnK-qw-obB">
+                        <rect key="frame" x="173" y="210" width="7" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="RnK-qw-obB" secondAttribute="trailing" constant="8" id="ARD-Vj-icL"/>
+                <constraint firstAttribute="bottom" secondItem="aPk-Iq-hOg" secondAttribute="bottom" constant="13" id="Bxy-pC-1yF"/>
+                <constraint firstAttribute="trailing" secondItem="2dx-cI-3Xl" secondAttribute="trailing" id="EdI-Im-dWl"/>
+                <constraint firstItem="2dx-cI-3Xl" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Fg2-Ht-vJD"/>
+                <constraint firstItem="QO3-Uq-Gpt" firstAttribute="leading" secondItem="aPk-Iq-hOg" secondAttribute="trailing" constant="5" id="Imy-73-rFU"/>
+                <constraint firstItem="2dx-cI-3Xl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="TWg-J6-N2j"/>
+                <constraint firstItem="QO3-Uq-Gpt" firstAttribute="top" secondItem="2dx-cI-3Xl" secondAttribute="bottom" constant="3" id="VeM-ri-yES"/>
+                <constraint firstItem="RnK-qw-obB" firstAttribute="top" secondItem="2dx-cI-3Xl" secondAttribute="bottom" constant="3" id="b1x-3e-bMO"/>
+                <constraint firstItem="RnK-qw-obB" firstAttribute="top" secondItem="2dx-cI-3Xl" secondAttribute="bottom" constant="3" id="bli-CI-0r4"/>
+                <constraint firstItem="aPk-Iq-hOg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="edq-Zd-9wk"/>
+                <constraint firstItem="aPk-Iq-hOg" firstAttribute="top" secondItem="2dx-cI-3Xl" secondAttribute="bottom" constant="3" id="nRH-gU-Dgp"/>
+                <constraint firstItem="RnK-qw-obB" firstAttribute="leading" secondItem="RI9-pm-Pfw" secondAttribute="trailing" constant="5" id="vqp-fy-Rc8"/>
+                <constraint firstItem="RI9-pm-Pfw" firstAttribute="top" secondItem="2dx-cI-3Xl" secondAttribute="bottom" constant="3" id="w9h-9T-dU3"/>
+            </constraints>
+            <size key="customSize" width="188" height="243"/>
+            <connections>
+                <outlet property="commentImageV" destination="RI9-pm-Pfw" id="bkL-gy-yws"/>
+                <outlet property="commentLab" destination="RnK-qw-obB" id="W6F-f6-Yqg"/>
+                <outlet property="imageV" destination="2dx-cI-3Xl" id="fNa-9e-5xp"/>
+                <outlet property="praiseImageV" destination="aPk-Iq-hOg" id="0To-AU-LLs"/>
+                <outlet property="praiseLab" destination="QO3-Uq-Gpt" id="gOO-CF-XV8"/>
+            </connections>
+            <point key="canvasLocation" x="130" y="202.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="album_ding.png" width="11" height="10"/>
+        <image name="album_pl.png" width="15" height="11"/>
+        <image name="ic_launcher.png" width="144" height="144"/>
+    </resources>
+</document>

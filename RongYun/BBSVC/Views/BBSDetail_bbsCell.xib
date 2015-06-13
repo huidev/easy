@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="139" id="KGk-i7-Jjw" customClass="BBSDetail_bbsCell">
+            <rect key="frame" x="0.0" y="0.0" width="357" height="136"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oKd-yx-abK">
+                        <rect key="frame" x="8" y="25" width="129" height="85.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="129" id="8Vf-Vy-vvg"/>
+                            <constraint firstAttribute="height" constant="85.5" id="b3K-Ra-7PX"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="台湾美食" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RPL-er-wJc">
+                        <rect key="frame" x="153" y="37" width="68" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQ1-Sb-ZwF">
+                        <rect key="frame" x="145" y="87" width="35" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="35" id="NQC-Tp-l95"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="2" image="b_ima_t_people.png">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mxh-GY-0Ng">
+                        <rect key="frame" x="181" y="88" width="35" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="35" id="CsI-qV-NOX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="2" image="b_ima_liuyan.png">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXE-XE-hoz">
+                        <rect key="frame" x="217" y="89" width="69" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="69" id="w23-b4-Ft2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="2" image="b_ima_ly.png">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="FXE-XE-hoz" firstAttribute="leading" secondItem="mxh-GY-0Ng" secondAttribute="trailing" constant="1" id="5z0-17-KLw"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="FXE-XE-hoz" secondAttribute="bottom" constant="23.5" id="DS0-kM-cwM"/>
+                    <constraint firstItem="oKd-yx-abK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="17" id="Ift-8U-ODl"/>
+                    <constraint firstItem="LQ1-Sb-ZwF" firstAttribute="leading" secondItem="oKd-yx-abK" secondAttribute="trailing" constant="8" id="TbA-Qy-Yts"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="LQ1-Sb-ZwF" secondAttribute="bottom" constant="25.5" id="Ttj-yT-kBH"/>
+                    <constraint firstItem="RPL-er-wJc" firstAttribute="leading" secondItem="oKd-yx-abK" secondAttribute="trailing" constant="16" id="f5p-xJ-VGa"/>
+                    <constraint firstItem="oKd-yx-abK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="fLU-s4-Ba8"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="mxh-GY-0Ng" secondAttribute="bottom" constant="24.5" id="nco-7j-ZTL"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="oKd-yx-abK" secondAttribute="bottom" constant="17" id="qEO-Or-6Hg"/>
+                    <constraint firstItem="mxh-GY-0Ng" firstAttribute="leading" secondItem="LQ1-Sb-ZwF" secondAttribute="trailing" constant="1" id="svS-lz-6b6"/>
+                    <constraint firstItem="RPL-er-wJc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="29" id="yce-mE-Bus"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageV" destination="oKd-yx-abK" id="83e-Xp-tps"/>
+                <outlet property="peopleBtn" destination="LQ1-Sb-ZwF" id="Q2K-AF-1IJ"/>
+                <outlet property="postBtn" destination="mxh-GY-0Ng" id="mV9-xb-Vub"/>
+                <outlet property="replyBtn" destination="FXE-XE-hoz" id="u8Q-Wa-ztI"/>
+                <outlet property="titleLab" destination="RPL-er-wJc" id="zLi-Od-cv4"/>
+            </connections>
+            <point key="canvasLocation" x="118.5" y="217"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="b_ima_liuyan.png" width="11" height="11"/>
+        <image name="b_ima_ly.png" width="14" height="13"/>
+        <image name="b_ima_t_people.png" width="11" height="12"/>
+    </resources>
+</document>

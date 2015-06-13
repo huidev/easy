@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyPhotoVC">
+            <connections>
+                <outlet property="slideSwitchView" destination="0eC-k5-eaE" id="3j5-fU-psL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ofy-9X-fNR">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="320" id="XWE-F6-Gtx"/>
+                        <constraint firstAttribute="height" constant="140" id="zsJ-dZ-TVP"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="b_ima_t_people.png" translatesAutoresizingMaskIntoConstraints="NO" id="2FE-4c-ofR">
+                    <rect key="frame" x="23" y="34.5" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="J6f-F4-dfd"/>
+                        <constraint firstAttribute="height" constant="60" id="Lb4-Fj-JOk"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15935103349" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLg-Ur-IaF">
+                    <rect key="frame" x="95" y="60" width="105" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0eC-k5-eaE" customClass="LYHSlideSwitchView">
+                    <rect key="frame" x="0.0" y="140" width="320" height="428"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="2FE-4c-ofR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="23" id="3ns-Gp-zeM"/>
+                <constraint firstItem="0eC-k5-eaE" firstAttribute="top" secondItem="ofy-9X-fNR" secondAttribute="bottom" id="AFm-rA-v3n"/>
+                <constraint firstAttribute="trailing" secondItem="ofy-9X-fNR" secondAttribute="trailing" id="EMi-NM-jW3"/>
+                <constraint firstItem="ofy-9X-fNR" firstAttribute="leading" secondItem="2FE-4c-ofR" secondAttribute="trailing" constant="-83" id="FK5-hU-TlU"/>
+                <constraint firstItem="0eC-k5-eaE" firstAttribute="top" secondItem="ofy-9X-fNR" secondAttribute="bottom" id="Flk-zv-OS7"/>
+                <constraint firstItem="ofy-9X-fNR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="IFN-uB-q9r"/>
+                <constraint firstItem="ofy-9X-fNR" firstAttribute="leading" secondItem="2FE-4c-ofR" secondAttribute="trailing" constant="-83" id="a9z-py-PDk"/>
+                <constraint firstItem="2FE-4c-ofR" firstAttribute="centerY" secondItem="ofy-9X-fNR" secondAttribute="centerY" constant="-5.5" id="cjY-Ja-em6"/>
+                <constraint firstAttribute="bottom" secondItem="0eC-k5-eaE" secondAttribute="bottom" id="dcR-Y2-beC"/>
+                <constraint firstAttribute="trailing" secondItem="0eC-k5-eaE" secondAttribute="trailing" id="hOs-Qv-S9d"/>
+                <constraint firstItem="gLg-Ur-IaF" firstAttribute="centerY" secondItem="ofy-9X-fNR" secondAttribute="centerY" id="k9S-1Q-gpQ"/>
+                <constraint firstItem="gLg-Ur-IaF" firstAttribute="leading" secondItem="2FE-4c-ofR" secondAttribute="trailing" constant="12" id="mVW-2r-PYU"/>
+                <constraint firstItem="ofy-9X-fNR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="wDD-DF-d7E"/>
+                <constraint firstItem="0eC-k5-eaE" firstAttribute="top" secondItem="2FE-4c-ofR" secondAttribute="bottom" constant="44" id="wce-Kq-Dr8"/>
+                <constraint firstItem="0eC-k5-eaE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wz3-pY-XAa"/>
+                <constraint firstItem="0eC-k5-eaE" firstAttribute="top" secondItem="ofy-9X-fNR" secondAttribute="bottom" constant="8" id="x0f-5f-OPa"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="FK5-hU-TlU"/>
+                    <exclude reference="a9z-py-PDk"/>
+                    <exclude reference="Flk-zv-OS7"/>
+                    <exclude reference="wce-Kq-Dr8"/>
+                    <exclude reference="x0f-5f-OPa"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="b_ima_t_people.png" width="11" height="12"/>
+    </resources>
+</document>

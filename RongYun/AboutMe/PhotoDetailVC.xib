@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotoDetailVC">
+            <connections>
+                <outlet property="bgView" destination="GEC-w4-c6a" id="K1j-YR-QQK"/>
+                <outlet property="commendtBtn" destination="5D3-cM-efE" id="nRU-DR-7fU"/>
+                <outlet property="photoScrollView" destination="rDj-PP-2oL" id="T7p-pe-bl8"/>
+                <outlet property="praiseBtn" destination="6c4-qv-yaS" id="HVv-uj-YSu"/>
+                <outlet property="replyBtn" destination="uma-11-2N5" id="KW7-m9-3Md"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GEC-w4-c6a">
+                    <rect key="frame" x="0.0" y="519" width="320" height="49"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5D3-cM-efE">
+                            <rect key="frame" x="267" y="0.5" width="49" height="49"/>
+                            <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="49" id="nLs-AX-UFH"/>
+                                <constraint firstAttribute="height" constant="49" id="vrO-1o-7NR"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="titleEdgeInsets" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="2" image="p_comment.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="comment:" destination="-1" eventType="touchUpInside" id="rzm-5B-Jnw"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6c4-qv-yaS">
+                            <rect key="frame" x="214" y="0.5" width="49" height="49"/>
+                            <color key="backgroundColor" red="0.98431372549999996" green="0.22352941179999999" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="49" id="d73-qw-JKx"/>
+                                <constraint firstAttribute="height" constant="49" id="vhE-xE-zTV"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="titleEdgeInsets" minX="2" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="1" image="p_praise.png"/>
+                            <connections>
+                                <action selector="praise:" destination="-1" eventType="touchUpInside" id="8wc-EI-xbY"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uma-11-2N5">
+                            <rect key="frame" x="8" y="0.5" width="49" height="49"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="49" id="NVT-Qf-yND"/>
+                                <constraint firstAttribute="width" constant="49" id="bed-FM-lQL"/>
+                            </constraints>
+                            <state key="normal" image="a_editor.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="reply:" destination="-1" eventType="touchUpInside" id="hvd-nP-qDR"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="49" id="3NI-zP-Y2b"/>
+                        <constraint firstItem="5D3-cM-efE" firstAttribute="leading" secondItem="6c4-qv-yaS" secondAttribute="trailing" constant="4" id="aaZ-zU-2bt"/>
+                        <constraint firstItem="uma-11-2N5" firstAttribute="leading" secondItem="GEC-w4-c6a" secondAttribute="leading" constant="8" id="gEp-nu-ND4"/>
+                        <constraint firstAttribute="centerY" secondItem="5D3-cM-efE" secondAttribute="centerY" id="gQK-Ee-10C"/>
+                        <constraint firstAttribute="centerY" secondItem="6c4-qv-yaS" secondAttribute="centerY" id="l8g-Y0-4lD"/>
+                        <constraint firstItem="5D3-cM-efE" firstAttribute="leading" secondItem="GEC-w4-c6a" secondAttribute="leading" constant="267" id="r5Y-5K-pk9"/>
+                        <constraint firstAttribute="centerY" secondItem="uma-11-2N5" secondAttribute="centerY" id="vOs-R6-qqc"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rDj-PP-2oL" customClass="YYResPhotoView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.98431372549999996" green="0.22352941179999999" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="rDj-PP-2oL" secondAttribute="trailing" id="Pbg-cY-VBo"/>
+                <constraint firstAttribute="bottom" secondItem="GEC-w4-c6a" secondAttribute="bottom" id="SXX-iq-3XT"/>
+                <constraint firstItem="rDj-PP-2oL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ToY-ve-xXX"/>
+                <constraint firstItem="rDj-PP-2oL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jd3-gJ-CKM"/>
+                <constraint firstAttribute="trailing" secondItem="GEC-w4-c6a" secondAttribute="trailing" id="n3Q-1o-OxZ"/>
+                <constraint firstItem="GEC-w4-c6a" firstAttribute="top" secondItem="rDj-PP-2oL" secondAttribute="bottom" id="oUR-nn-QhI"/>
+                <constraint firstItem="GEC-w4-c6a" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uW1-yX-HsX"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="a_editor.png" width="13" height="13"/>
+        <image name="p_comment.png" width="14" height="14"/>
+        <image name="p_praise.png" width="13" height="13"/>
+    </resources>
+</document>

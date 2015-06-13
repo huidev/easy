@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UpLoadPortrait">
+            <connections>
+                <outlet property="imageLab" destination="bao-3j-epf" id="Z6m-L4-OUV"/>
+                <outlet property="imageV" destination="ecX-oW-AGV" id="ZWx-R5-1tH"/>
+                <outlet property="titleLab" destination="w60-lg-s3I" id="4TB-HN-MvJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上传精美头像，让你的论坛脱颖而出" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w60-lg-s3I">
+                    <rect key="frame" x="24" y="32" width="272" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="b_ima_title.png" translatesAutoresizingMaskIntoConstraints="NO" id="ecX-oW-AGV">
+                    <rect key="frame" x="110" y="66.5" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="5bk-Mk-7PD"/>
+                        <constraint firstAttribute="height" constant="100" id="ECx-LQ-nhb"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击图片修改头像" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bao-3j-epf">
+                    <rect key="frame" x="108" y="179.5" width="104" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="w60-lg-s3I" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="32" id="BKZ-df-Rjt"/>
+                <constraint firstItem="ecX-oW-AGV" firstAttribute="top" secondItem="w60-lg-s3I" secondAttribute="bottom" constant="14" id="KAD-va-4Uy"/>
+                <constraint firstAttribute="centerX" secondItem="bao-3j-epf" secondAttribute="centerX" id="TPN-D7-OqB"/>
+                <constraint firstAttribute="trailing" secondItem="w60-lg-s3I" secondAttribute="trailing" constant="24" id="Y11-Vw-wJb"/>
+                <constraint firstItem="w60-lg-s3I" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="24" id="aMr-rx-q3k"/>
+                <constraint firstAttribute="centerX" secondItem="ecX-oW-AGV" secondAttribute="centerX" id="gQn-GU-UWQ"/>
+                <constraint firstItem="bao-3j-epf" firstAttribute="top" secondItem="ecX-oW-AGV" secondAttribute="bottom" constant="13" id="ywo-ED-1Sf"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="221" y="165"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="b_ima_title.png" width="37" height="37"/>
+    </resources>
+</document>

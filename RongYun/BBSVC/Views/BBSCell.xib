@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BBSCell" rowHeight="70" id="KGk-i7-Jjw" customClass="BBSCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_launcher.png" translatesAutoresizingMaskIntoConstraints="NO" id="Uox-bn-3Ad">
+                        <rect key="frame" x="8" y="13" width="45" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="8gr-UV-7HI"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="论坛名字" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lI-E7-vkx">
+                        <rect key="frame" x="61" y="8" width="68" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="论坛简介" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ya-8N-yrW">
+                        <rect key="frame" x="61" y="23" width="68" height="27"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SEw-eH-3sy">
+                        <rect key="frame" x="56" y="45" width="35" height="24.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="9Sf-wQ-Cy2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="2" image="bbs_ima_pers.png">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4U-NO-LxK">
+                        <rect key="frame" x="94" y="45" width="35" height="24.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="GwV-3u-pX8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="3" image="bbs_ima_post.png">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="综合论坛" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJh-Gt-BhW">
+                        <rect key="frame" x="267" y="5" width="48" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bbs_ima_type.png" translatesAutoresizingMaskIntoConstraints="NO" id="DC1-GC-rpT">
+                        <rect key="frame" x="257" y="8" width="7" height="9"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Uox-bn-3Ad" firstAttribute="bottom" secondItem="SEw-eH-3sy" secondAttribute="bottom" constant="-12.5" id="1Qb-NN-Ny3"/>
+                    <constraint firstItem="8Ya-8N-yrW" firstAttribute="leading" secondItem="Uox-bn-3Ad" secondAttribute="trailing" constant="8" id="51d-T2-G5h"/>
+                    <constraint firstItem="8lI-E7-vkx" firstAttribute="leading" secondItem="Uox-bn-3Ad" secondAttribute="trailing" constant="8" id="7y8-hF-bCx"/>
+                    <constraint firstAttribute="centerY" secondItem="Uox-bn-3Ad" secondAttribute="centerY" id="CW9-cn-9c0"/>
+                    <constraint firstItem="8lI-E7-vkx" firstAttribute="leading" secondItem="Uox-bn-3Ad" secondAttribute="trailing" constant="8" id="EC1-Yu-xQj"/>
+                    <constraint firstItem="8Ya-8N-yrW" firstAttribute="leading" secondItem="Uox-bn-3Ad" secondAttribute="trailing" constant="8" id="Nqd-i9-IH9"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="SEw-eH-3sy" secondAttribute="bottom" constant="-8" id="PKY-BX-Kns"/>
+                    <constraint firstItem="t4U-NO-LxK" firstAttribute="leading" secondItem="SEw-eH-3sy" secondAttribute="trailing" constant="3" id="Vje-pB-CeO"/>
+                    <constraint firstItem="Uox-bn-3Ad" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Y9k-bQ-7Al"/>
+                    <constraint firstAttribute="centerY" secondItem="8Ya-8N-yrW" secondAttribute="centerY" constant="-1.25" id="YrV-5p-viu"/>
+                    <constraint firstItem="SEw-eH-3sy" firstAttribute="baseline" secondItem="t4U-NO-LxK" secondAttribute="firstBaseline" id="ZFp-Fa-CFv"/>
+                    <constraint firstItem="8Ya-8N-yrW" firstAttribute="trailing" secondItem="t4U-NO-LxK" secondAttribute="trailing" id="c2N-AW-7CF"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="sJh-Gt-BhW" secondAttribute="trailing" constant="-3" id="etD-ix-8Tw"/>
+                    <constraint firstItem="Uox-bn-3Ad" firstAttribute="top" secondItem="8lI-E7-vkx" secondAttribute="top" constant="9" id="fBc-cX-6Ay"/>
+                    <constraint firstItem="8Ya-8N-yrW" firstAttribute="top" secondItem="8lI-E7-vkx" secondAttribute="bottom" id="fWz-Zv-qdS"/>
+                    <constraint firstItem="SEw-eH-3sy" firstAttribute="leading" secondItem="Uox-bn-3Ad" secondAttribute="trailing" constant="3" id="i1u-I3-t5m"/>
+                    <constraint firstItem="t4U-NO-LxK" firstAttribute="baseline" secondItem="SEw-eH-3sy" secondAttribute="firstBaseline" id="iRd-ay-unH"/>
+                    <constraint firstItem="sJh-Gt-BhW" firstAttribute="leading" secondItem="DC1-GC-rpT" secondAttribute="trailing" constant="3" id="isY-Ld-gEQ"/>
+                    <constraint firstItem="8lI-E7-vkx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="j22-Z5-Rfe"/>
+                    <constraint firstItem="sJh-Gt-BhW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-3" id="lOr-wQ-aOg"/>
+                    <constraint firstItem="t4U-NO-LxK" firstAttribute="top" secondItem="SEw-eH-3sy" secondAttribute="top" id="lbQ-Vy-d0G"/>
+                    <constraint firstItem="SEw-eH-3sy" firstAttribute="top" secondItem="8lI-E7-vkx" secondAttribute="bottom" constant="23" id="nc9-cu-enM"/>
+                    <constraint firstItem="8Ya-8N-yrW" firstAttribute="trailing" secondItem="8lI-E7-vkx" secondAttribute="trailing" id="qD6-K8-p7e"/>
+                    <constraint firstItem="SEw-eH-3sy" firstAttribute="leading" secondItem="Uox-bn-3Ad" secondAttribute="trailing" constant="8" id="rYr-cM-Cmv"/>
+                    <constraint firstItem="DC1-GC-rpT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="rlf-qg-E2T"/>
+                    <constraint firstItem="8lI-E7-vkx" firstAttribute="leading" secondItem="Uox-bn-3Ad" secondAttribute="trailing" constant="8" id="tqS-jR-1bp"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="8Ya-8N-yrW" secondAttribute="bottom" constant="12" id="yXH-4g-ABG"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="fBc-cX-6Ay"/>
+                        <exclude reference="7y8-hF-bCx"/>
+                        <exclude reference="tqS-jR-1bp"/>
+                        <exclude reference="51d-T2-G5h"/>
+                        <exclude reference="rYr-cM-Cmv"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="briefLab" destination="8Ya-8N-yrW" id="GrJ-C4-9k0"/>
+                <outlet property="imageV" destination="Uox-bn-3Ad" id="6Ve-Sv-6Nr"/>
+                <outlet property="nameLab" destination="8lI-E7-vkx" id="drE-ji-7IY"/>
+                <outlet property="postCountBtn" destination="t4U-NO-LxK" id="czY-tp-b4D"/>
+                <outlet property="typeLab" destination="sJh-Gt-BhW" id="moY-TC-kcS"/>
+                <outlet property="userCountBtn" destination="SEw-eH-3sy" id="R2r-oN-WdR"/>
+            </connections>
+            <point key="canvasLocation" x="174" y="135"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bbs_ima_pers.png" width="14" height="14"/>
+        <image name="bbs_ima_post.png" width="12" height="14"/>
+        <image name="bbs_ima_type.png" width="7" height="9"/>
+        <image name="ic_launcher.png" width="144" height="144"/>
+    </resources>
+</document>
